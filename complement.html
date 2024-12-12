@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynamic Web Features</title>
+<!-- git push -u origin main -->
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.collapsible {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.collapsible:hover {
+  background-color: #45a049;
+}
+
+.active {
+  background-color: #367c39;
+}
+
+.content {
+  padding: 15px;
+  display: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin: 8px 0;
+}
+
+form label:hover {
+  color: #4CAF50;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .collapsible {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+}
+</style>
+</head>
+<body>
+<h1 style="text-align: center; color: #333; padding: 20px;">Complement</h1>
+
+<button type="button" class="collapsible">1's & 2's Complement </button>
+<div class="content">
+    <form>
+       
+        <label><input type="checkbox" name="features" value="Portfolio Personal"> Bit = 0/1</label>
+        <label><input type="checkbox" name="features" value="Portfolio Personal"> Sign & Sign Number = + (sign) & +5 (sign Number)</label>
+        <label><input type="checkbox" name="features" value="Portfolio Personal"> Sign bit Sign = bit হলো একটি নির্দিষ্ট বিট যা কম্পিউটারে কোনো সংখ্যার <br> ধনাত্মক (Positive) বা ঋণাত্মক (Negative) অবস্থা নির্ধারণ করে। <br>
+ 
+          0: ধনাত্মক সংখ্যা। <br>
+          1: ঋণাত্মক সংখ্যা।</label>
+        <label><input type="checkbox" name="features" value="Portfolio Personal">Register (রেজিস্টার) =
+          Register হলো কম্পিউটারের প্রসেসরের (CPU) ভেতরে অবস্থিত একটি অতি দ্রুতগতি সম্পন্ন স্টোরেজ ইউনিট।</label>
+        <label><input type="checkbox" name="features" value="Portfolio Personal"> Carry Bit = Carry Bit হলো কম্পিউটারে গণনার সময় যখন দুটি সংখ্যা যোগ করে অতিরিক্ত একটি বিট (Carry) উৎপন্ন হয়, তখন তা Carry Flag বা Carry Bit-এ সংরক্ষিত হয়</label>
+        
+    </form>
+    <img src="complement.png" style="max-width:100%;height:auto;"> <br><br>
+    <img src="com.png" style="max-width:100%;height:auto;"> <br><br>
+    <img src="prac1.png" style="max-width:100%;height:auto;"> <br><br>
+    <img src="prac2.png" style="max-width:100%;height:auto;"> <br><br>
+    <img src="prac3.png" style="max-width:100%;height:auto;"> <br><br>
+    <img src="prac4.png" style="max-width:100%;height:auto;"> <br><br>
+    <img src="prac5.png" style="max-width:100%;height:auto;"> <br><br>
+    <img src="prac6.png" style="max-width:100%;height:auto;"> <br><br>
+    <img src="prac7.png" style="max-width:100%;height:auto;"> <br><br>
+    <img src="prac8.png" style="max-width:100%;height:auto;"> <br><br>
+    <a href="https://www.edupointbd.com/hsc-ict-chapter-3/" target="_blank">Edu Point</a>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
